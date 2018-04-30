@@ -7,31 +7,54 @@
     <title>Mad Libs</title>
 </head>
 <body>
+    <!-- List of questions that were asked along with id space for inputs -->
+    <h3>What is your name?</h3>
+    <p id="name"></p>
+    <h3>Click Ok if you enjoy pie.</h3>
+    <p id="pie"></p>
+    <h3>Name a famous person.</h3>
+    <p id="famous"></p>
+    <h3>Name a gerund (or a verb ending in -ing).</h3>
+    <p id="gerund"></p>
+    <h3>Click OK if you want to read something funny.</h3>
+    <p id="mad-libs"></p>
+
     <script>
         // Ask user for their name.
         var userName = prompt('What is your name?');
         console.log('User\'s name is', userName);
         alert('Hello, ' + userName + '!');
+        if (userName != null) {
+            document.getElementById("name").innerHTML = userName;
+        }
 
         // Ask user if they like pie. Assumes cake is the only alternative.
         var likesPie = confirm('Click OK if you enjoy pie.');
         console.log(userName, 'likes pie:', likesPie);
         if(likesPie) {
             alert('I agree, ' + userName + ', pie is pretty darn good.');
+            document.getElementById("pie").innerHTML = userName + " likes pie.";
         }
         else {
             alert('I agree, ' + userName + ', cake is way better.');
+            document.getElementById("pie").innerHTML = userName + " does not like pie, and probably likes cake.";
         }
         
         // Ask user to name a famous person.
         var famousPerson = prompt('Name a famous person.');
         console.log(famousPerson, 'is a famous person.');
         alert('Oh, ' + famousPerson + ' is definitely more famous than you, ' + userName + '.');
+        if (famousPerson != null) {
+            document.getElementById("famous").innerHTML = famousPerson;
+        }
         
         // Ask user for a gerund.
         var gerund = prompt('Name a gerund (or a verb ending in -ing).');
         console.log(gerund, 'is a gerund.');
         alert('Imagine ' + userName + ' ' + gerund + ', or even ' + famousPerson + ' ' + gerund + '.');
+        if (gerund != null) {
+            document.getElementById("gerund").innerHTML = gerund;
+        }
         
         // Ask if user wants to see the assembled variables.
         var madLibs1 = confirm('Click OK if you want to read something funny.');
@@ -44,20 +67,14 @@
             else {
                 alert('On ' + userName + '\'s birthday, there was a giant birthday cake. Suddenly, ' + famousPerson + ' popped out of the top, causing ' + userName + ' to fall over, ' + gerund + '!');
             }
+            document.getElementById("mad-libs").innerHTML = "Funny joke dispensed.";
         }
 
         // Otherwise, lament.
         else {
             alert('Aww, that\'s too bad, ' + userName + ', ' + famousPerson + ' would be disappointed to know that. Maybe you\'d rather be ' + gerund + '?');
+            document.getElementById("mad-libs").innerHTML = "Funny joke not dispensed.";
         }
-
-    </script>
-
-    <!-- List of questions that were asked -->
-    <p>What is your name?</p>
-    <p>Click Ok if you enjoy pie.</p>
-    <p>Name a famous person.</p>
-    <p>Name a gerund (or a verb ending in -ing).</p>
-    <p>Click OK if you want to read something funny.</p>
+        </script>
 </body>
 </html>
