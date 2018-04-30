@@ -7,14 +7,56 @@
     <title>Document</title>
 </head>
 <body>
+    <h1> Chris' Interogation Questions</h1>
     <p>What should I call you?</p>
-    <p>Question2</p>
-    <p>Question 3</p>
+    <p>Where were before this?</p>
+    <p>What was the weather there?</p>
+    <p>WHERE WERE YOU LAST NIGHT AT 11:33PM?</p>
+
     <script>
         //Gathering User preferred pronoun
         var userName = prompt('What should I call you?');
         //log pronoun in console
         console.log('Call user by the name:', userName );
+
+        //Respond to user and call by name
+        alert('Hey there, ' + userName + '. It\'s nice to meet you!');
+        alert('I\'m going to be asking you a few questions..........');
+       
+        //get previous location
+        var origin = prompt('Okay ' + userName + '. Where were you coming form before this?');
+
+        //log location to console
+        console.log(userName + ' came from ' + origin);
+
+        //Response to user
+        alert('So you say, ' + userName + ', that you were coming from ' + origin + '... ');
+        alert('I see... I see....')
+
+        //Ask what the weather was like
+        var weather = prompt('So, ' + userName + '.... What was the weather like at ' + origin + '?')
+        
+        //log weather to console
+        console.log( userName + ' says the weather at ' + origin + ' was ' + weather);
+        
+        //Response to user
+        alert(userName + '.. You\'re telling me that you were coming from ' + origin + ', where it was ' + weather + '?');
+
+        //asking if they're telling the truth
+        var tellingTruth = confirm('If you\'re lying, press "CANCEL"');
+        
+        //result of confirm or cancel 
+        if(tellingTruth){
+            var accuse = prompt('WHERE WERE YOU LAST NIGHT AT 11:33pm!!??');
+            console.log('suspect seems to have been ' + accuse + ' last night.');
+            alert('Your story seems to check out, ' + userName + '. You were at ' + accuse + ' last night..' );
+            alert('Thanks for your time. You\'re free to go!');
+        }
+        else{
+            alert('YOU\'RE UNDER ARREST!');
+        }
+
+
     </script>
 </body>
 </html>
