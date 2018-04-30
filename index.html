@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Welcome!</title>
 </head>
 <body>
+    <h1>Welcome to my page!</h1>
     
+    <p>What is your name?</p>
+    <p>Where are you from?</p>
+    <p>What is a hobby of yours?</p>
+    <p>Where is the furthest you have traveled?</p>
+
+    <h3>Thanks for checking out my first lab project!</h3>
+
+    <script>
+        var userName = prompt('What is your name?')
+        console.log('User\'s name is', userName)
+        alert('Hey ' + userName + '! ' + 'Thanks for checking out my webpage!')
+
+        var fromWhere = prompt('Where are you from ' + userName + '?')
+        console.log('User is from', fromWhere)
+        alert('Great, ' + userName + '! ' + 'I\'ll be sure to google ' + fromWhere + ' so I can picture it. ' + 'If you\'re wondering I\'m from the mysterious realm of ones and zeros.')
+
+        var hobby = prompt('Name one of your hobbies!')
+        console.log('User\'s hobby is ' + hobby)
+        alert('Thanks for sharing ' + userName + ' from ' + fromWhere + ', Earth. ' + 'I\'ll be sure to watch a YouTube clip on ' + hobby + '.')
+        
+        var travelTo = prompt('Last question! ' + 'Where would you like to travel to?')
+        console.log(userName + ' would like to travel to ' + travelTo)
+        alert(travelTo + ', huh!' + ' Interesting choice ' + userName + ' from ' + fromWhere + ' who likes ' + hobby + '.' + ' It was great to get to know you a bit more!' + ' Come back again soon.')
+
+    </script>
 </body>
 </html>
