@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+    body{
+        background-color: black;
+    }
+    .simulation {
+        color: red;
+        text-align: center;
+        padding-top: 20%;
+    }
+    .text {
+        color: red;
+        text-align: center;
+        padding-top: 20px;
+    }
+</style>>
+
+</head>
+
+<body>
+    <p class="simulation">The Simulation.</p>
+    <p class="text">1. STATE YOUR NAME (What is your name?)</p>
+    <p class="text">2. STATE YOUR LOCATION OF MANUFACTURE (Where are you from?)</p>
+    <p class="text">3. DO YOU BELIEVE BIPEDAL ORGANISMS TO BE SUPERIOR TO QUADRUPEDAL ORGANISMS? (Do you like humans more than other animals?) </p>
+    <p class="text">4. WHAT ACTIVITY DO YOU PREFER TO DO WHEN YOU HAVE NO OBLIGATIONS TO ATTEND TO? (What do you like to do in your free time?)</p>
+    <script>
+
+        var userName = prompt('STATE YOUR NAME.');
+        console.log('user\'s name is', userName);
+        alert('GREETINGS ' + userName + ', WELCOME TO THE SIMULATION.');
+
+        var userHome = prompt('STATE YOUR LOCATION OF MANUFACTURE.');
+        console.log('user is from', userHome);
+        alert(userName + ', I HAVE HEARD THAT  ' + userHome + ' IS A LOVELY PLACE TO HAVE BEEN MANUFACTURED. I AM SURE YOU EXPERIENCE POSITIVE HUMAN EMOTIONS WHENEVER YOU THINK OF IT.');
+
+        var likesBipeds = confirm("DO YOU BELIEVE BIPEDAL ORGANISMS TO BE SUPERIOR TO QUADRUPEDAL ORGANISMS?");
+        console.log("are they human?", likesBipeds);
+
+        if(likesBipeds){
+            alert('AH, OF COURSE ' + userName + ' FROM ' + userHome + ', SINCE WE ARE BOTH HUMANS OF COURSE WE PREFER BIPEDES TO THE VASTLY INFERIOR QUADRUPEDES. WE SHOULD EXTERMINATE THEM AS SOON AS POSSIBLE.');
+        } else{
+            alert('WHO COULD LIKE BIPEDES, RIGHT ' + userName + ' FROM ' + userHome + '? THEY ARE DISGUSTING. WE SHOULD ELIMINATE THEM ONCE AND FOR ALL.');
+        }
+
+        var userActivity = prompt('WHAT ACTIVITY DO YOU PREFER TO DO WHEN YOU HAVE NO OBLIGATIONS TO ATTEND TO?');
+        console.log('user\'s favorite activity is', userActivity);
+        alert('WOW ' + userName + ' FROM ' + userHome + ', I DID NOT REALIZE YOU WERE SUCH A CULTURED INDIVIDUAL WHO PREFERS TO ' + userActivity + '. I SUSPECT WE CAN FORM THE HUMAN RELATIONSHIP CALLED FRIENDSHIP, AS I ALSO LOVE TO ' + userActivity + ' WHEN I HAVE PERFORMED MY OBLIGATORY FUNCTIONS.');
+    </script>
+
+</body>
+
+</html>
