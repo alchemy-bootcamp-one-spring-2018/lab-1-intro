@@ -8,10 +8,12 @@
 </head>
 <body>
     <script>
+        // Ask user for their name.
         var userName = prompt('What is your name?');
-        console.log('User\'s name is ', userName);
+        console.log('User\'s name is', userName);
         alert('Hello, ' + userName + '!');
 
+        // Ask user if they like pie. Assumes cake is the only alternative.
         var likesPie = confirm('Click OK if you enjoy pie.');
         console.log(userName, 'likes pie:', likesPie);
         if(likesPie) {
@@ -20,13 +22,42 @@
         else {
             alert('Yeah, cake is way better.');
         }
-
+        
+        // Ask user to name a famous person.
         var famousPerson = prompt('Name a famous person.');
-        console.log(famousPerson, 'is a famous person.')
+        console.log(famousPerson, 'is a famous person.');
+        alert('Oh, ' + famousPerson + ' is definitely a famous person.');
+        
+        // Ask user for a gerund.
+        var gerund = prompt('Name a gerund (or a verb ending in -ing.');
+        console.log(gerund, 'is a gerund.');
+        alert('Hmmm, ' + gerund + ' is a very interesting response.');
+        
+        // Ask if user wants to see the assembled variables.
+        var madLibs1 = confirm('Click OK if you want to read something funny.');
+
+        // If OK, give a response depending on whether or not the user likes pie or not.
+        if(madLibs1) {
+            if(likesPie) {
+                alert('Once, while ' + gerund + ', ' + famousPerson + ' saw ' + userName + ' throw a whole cake on the ground because it wasn\'t pie.');
+            }
+            else {
+                alert('On ' + userName + '\'s birthday, there was a giant birthday cake. Suddenly, ' + famousPerson + ' popped out of the top, causing ' + userName + ' to fall over, ' + gerund + '!');
+            }
+        }
+
+        // Otherwise, lament.
+        else {
+            alert('Aww, that\'s too bad.');
+        }
+
     </script>
+
+    <!-- List of questions that were asked -->
     <p>What is your name?</p>
     <p>Click Ok if you enjoy pie.</p>
     <p>Name a famous person.</p>
-    <p>Name a sport.</p>
+    <p>Name a gerund (or a verb ending in -ing.</p>
+    <p>Click OK if you want to read something funny.</p>
 </body>
 </html>
