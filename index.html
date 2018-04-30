@@ -8,19 +8,30 @@
     <h3>Please be prepared to answer the following questions from your browser</h3>
     <ul>
         <li>What is your name?</li>
+        <li>What is your quest?</li>
         <li>What is your favorite color?</li>
         <li>What is the airspeed velocity of an unladen swallow?</li>
     </ul>
     <script>
         // name
-        var userName = prompt ("What is your name?")
-        console.log ("The user's name is", userName)
+        var userName = prompt ("What is your name?");
+        console.log ("The user's name is", userName);
+        // quest
+        var userQuest = prompt ("What is your quest?");
+        console.log ("The user quest is ", userQuest);
         // color
-        var userColor = prompt (userName + ", what is your favorite color?")
-        console.log ("The user's favorite color is", userColor)
+        var userColor = prompt (userName + ", what is your favorite color?");
+        console.log ("The user's favorite color is", userColor);
         // swallow
-        var userVelocity = prompt ("Dearest " + userName + "-who-likes-" + userColor + ", what is the airspeed velocity of an unladen swallow? (in km/hr)")
-        console.log ("The user's velocity guess is", userVelocity, "km/hr")
+        do {
+            var userVelocity = prompt ("Dearest " + userName + "-who-likes-" + userColor + ", what is the airspeed velocity of an unladen swallow? (in km/hr)")
+            console.log ("The user's velocity guess is", userVelocity, "km/hr")
+            if (isNaN(userVelocity)) {
+                alert("Please enter a number.");
+            }
+        } while (isNaN(userVelocity))
+
+        
     </script>
 
 </body>
