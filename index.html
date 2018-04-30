@@ -6,6 +6,31 @@
 <body>
     <p>What is your name?</p>
     <p>What is your favorite food?</p>
-    <p></p>
+    <p>What city do you live in?</p>
+    <p>Do you have any pets?</p>
+
+    <script>
+        var userName = prompt('What is your name?', userName);
+        alert('Hi, ' + userName + '!');
+        console.log('hi ' + userName);
+
+        var favoriteFood = prompt('What\'s your favorite food, ' + userName + '?');
+        alert(userName + ', you love ' + favoriteFood + '!');
+        console.log('your favorite food is ' + favoriteFood)
+
+        var residence = prompt('Where do you live?', residence);
+        alert(userName + ', ' + residence + ' is a great place to eat ' + favoriteFood + '!');
+        console.log('you live in ' + residence);
+
+        var hasPets = confirm(userName + ', do you own any pets?');
+        if (hasPets) {
+            alert(userName + ', pets are great! You should hang out with them in ' + residence + ' and eat ' + favoriteFood + '!');
+            console.log('has pets');
+        }
+        else {
+            alert(userName + ', if you live in ' + residence + ' and you love ' + favoriteFood + ', you should really think about getting a pet!');
+            console.log('does not have pets');
+        }
+    </script>
 </body>
 </html>
