@@ -11,7 +11,22 @@
         var userName = prompt('What is your name?');
         console.log('User\'s name is ', userName);
         alert('Hello, ' + userName + '!');
+
+        var likesPie = confirm('Click OK if you enjoy pie.');
+        console.log(userName, 'likes pie:', likesPie);
+        if(likesPie) {
+            alert('Yeah, pie is pretty darn good.');
+        }
+        else {
+            alert('Yeah, cake is way better.');
+        }
+
+        var famousPerson = prompt('Name a famous person.');
+        console.log(famousPerson, 'is a famous person.')
     </script>
-    <p>userName</p>
+    <p>What is your name?</p>
+    <p>Click Ok if you enjoy pie.</p>
+    <p>Name a famous person.</p>
+    <p>Name a sport.</p>
 </body>
 </html>
