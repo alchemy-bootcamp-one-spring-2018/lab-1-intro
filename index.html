@@ -31,33 +31,39 @@
                     console.log('available hours for adventure:' , adventureTime);
                     alert('Ok, I\'ll make sure you are back to' + startAddress + 'within' + adventureTime + 'hours');
             </script>
+            <h3>3.</h3>
+            <p>
+                Are you ready for a hike with over 2,000ft. of elevation gain?  
+            </p>
+            <script>
+                    var elevation = confirm('Are you ready for a hike with over 2,000ft. of elevation gain?');
+                    console.log('Are they up for elevation gain?' , elevation);
 
+                    if(elevation){
+                        alert('Let\'s head for the hills!')
+                    }
+                    else {
+                        alert('Ok, we\'ll keep it mellow.')
+                    }
+                   
+            </script>
+            <h3>4.</h3>
+            <p>
+                Would you prefer a mountain or coastal adventure? 
+            </p>
+            <script>
+                    var environment = prompt('Would you prefer a mountain or coastal adventure?');
+                    console.log('Mountains or the coast?' , environment);
 
-    </div>
-
-
-
-
-
-    <p></p>
-    <script>
-            var userName = prompt('Wht is your name?');
-            console.log('user\'s name is' , userName);
-    
-            alert('Hi' + userName + 'welcome!');
-    
-            var favoriteFood = prompt('what is your favorite food?');
-            console.log('user\'s favorite food is' , favoriteFood); 
-    
-            alert('hi' + userName + ', I like' + favoriteFood + 'too');
-    
-            var likesCats = confirm('like cats?');
-            console.log('user likes cats' , likesCats);
-    
-            if(likesCats) {
-                alert('Hey' + )
-            }
-        </script>
+                    alert('You can\'t go wrong with a' + environemnt + 'adventure!')                   
+            </script>
+             <h3>Let's make sure I have all the details:</h3>
+             <script>
+                     var adventureDetails = prompt('Let\'s make sure I have all the details correct. Ready to review your adventure constraints?);
+                     console.log('Adventure constraints are' , adventureDetails);
+ 
+                     alert('Your' + environment + 'adventure will begin at' + startAddress + 'and will last for' + adventureTime + 'hours. )                   
+             </script>
     
 </body>
 </html>
