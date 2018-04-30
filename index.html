@@ -5,10 +5,12 @@
 </head>
 <body>
     <h1>Q & A</h1>
-    <p>What's your name?</p>
-    <p>Favorite type of music</p>
-    <p>Have you traveled?</p>
-    <p>Where?</p>
+    <ul>
+        <li>What's your name?</li>
+        <li>What's your favorite type of music?</li>
+        <li>Have you traveled?</li>
+        <li>Where?</li>
+    </ul>   
     <script>
         //prompt user for name
         var userName = prompt('Please, tell me you name.');
@@ -30,7 +32,7 @@
         if (hasTravelled) {
             var lastPlace = prompt('Where did you travel to most recently?');
             console.log('User has travelled to', lastPlace);
-            alert('Cool, I\'ve heard great things about ' + lastPlace + '. Listening to some ' + favMusic + ' over there sounds awesome.');
+            alert('Cool, ' + useName + '. I\'ve heard great things about ' + lastPlace + '. Listening to some ' + favMusic + ' over there sounds awesome.');
         } else {
             var nextPlace = prompt('Where would you like to travel?');
             console.log('User would like to travel to', nextPlace);
