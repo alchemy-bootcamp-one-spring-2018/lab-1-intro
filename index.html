@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Carmen's Health Page</h1>
+    <h2>Do you love REAL Foods?</h2>
+    <h2>What is your favorite green leafy food?</h2>
+    <h2>What is your favorite healthy drink?</h2>
+    <h2>What is your favorite healthy dessert food? </h2>
+    <h3>For more information or questions, you can contact Carmen at realfoods@yahoo.com </h3>
+    <script>
+        var loveFood = prompt ('Do you love REAL foods?').toUpperCase();
+        console.log('User says ' + loveFood + ' to REAL foods');
+        if (loveFood == 'YES') {
+            alert('Great! You are Human with great potential to live long, happy and healthy life.' )
+            var favLeafyFood = prompt ('What is your favorite green leafy food?').toUpperCase();
+            console.log('Favorite leafy food ' + favLeafyFood);
+            alert ('You got good taste I like ' + favLeafyFood + ' too!')
+            var favDrink = prompt ('What is your favorite healthy drink?').toUpperCase();
+            console.log('Favorite drink ' + favDrink);
+            alert ('No way. ' + favDrink + ' is my favorite too!')
+            var favDessert = prompt ('What is your favorite healthy dessert food?').toUpperCase();
+            console.log('Favorite dessert is ' + favDessert);
+            alert (favLeafyFood + ', ' + favDrink + ' and ' + favDessert + ' are excellent choices! Keep up eating REAL foods --- you are on your way to a long and fulfilling life!')
+             
+
+        } 
+        else if (loveFood == '') {
+            alert ('Please try again type in Yes or No.')
+        } 
+        else
+        {
+            alert('Wow! I am surprised you are still alive. But I can help you develop your love for food.  You can contact me at information below.') 
+        }
+    </script>
+</body>
+</html>
