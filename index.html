@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>I've got some questions for you...</p>
+    <script>
+    var userName = prompt('What is your name?');
+    console.log('user\'s name is', userName);
+    alert('Hi ' + userName + ' welcome to my web page!')
+    var userAge = prompt('How old are you?');
+    console.log('user\'s age is', userAge);
+    var userFood = prompt('What is your favorite food?');
+    console.log('user\'s favorite food is', userFood);
+    var userHunger = confirm('Are you hungry right now?');
+    console.log('is user hungry:' userHunger);
+    if(userHunger) {
+        alert('So ' + userName + ", " + userAge + ' years young ay? Hungry too? Well let\'s go get some ' + userFood + '!!!')
+    }
+    else {
+        alert('So ' + userName + ", " + userAge + ' years young ay? So I have some ' + userFood + ', but it doesn\'t seem like you are too hungry... get back to work!')
+    }
+    </script>
+</body>
+</html>
