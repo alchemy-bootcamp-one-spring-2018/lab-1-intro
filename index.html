@@ -17,21 +17,21 @@
         var likesPie = confirm('Click OK if you enjoy pie.');
         console.log(userName, 'likes pie:', likesPie);
         if(likesPie) {
-            alert('Yeah, pie is pretty darn good.');
+            alert('I agree, ' + userName + ', pie is pretty darn good.');
         }
         else {
-            alert('Yeah, cake is way better.');
+            alert('I agree, ' + userName + ', cake is way better.');
         }
         
         // Ask user to name a famous person.
         var famousPerson = prompt('Name a famous person.');
         console.log(famousPerson, 'is a famous person.');
-        alert('Oh, ' + famousPerson + ' is definitely a famous person.');
+        alert('Oh, ' + famousPerson + ' is definitely more famous than you, ' + userName + '.');
         
         // Ask user for a gerund.
-        var gerund = prompt('Name a gerund (or a verb ending in -ing.');
+        var gerund = prompt('Name a gerund (or a verb ending in -ing).');
         console.log(gerund, 'is a gerund.');
-        alert('Hmmm, ' + gerund + ' is a very interesting response.');
+        alert('Imagine ' + userName + ' ' + gerund + ', or even ' + famousPerson + ' ' + gerund + '.');
         
         // Ask if user wants to see the assembled variables.
         var madLibs1 = confirm('Click OK if you want to read something funny.');
@@ -48,7 +48,7 @@
 
         // Otherwise, lament.
         else {
-            alert('Aww, that\'s too bad.');
+            alert('Aww, that\'s too bad, ' + userName + ', ' + famousPerson + ' would be disappointed to know that. Maybe you\'d rather be ' + gerund + '?');
         }
 
     </script>
@@ -57,7 +57,7 @@
     <p>What is your name?</p>
     <p>Click Ok if you enjoy pie.</p>
     <p>Name a famous person.</p>
-    <p>Name a gerund (or a verb ending in -ing.</p>
+    <p>Name a gerund (or a verb ending in -ing).</p>
     <p>Click OK if you want to read something funny.</p>
 </body>
 </html>
