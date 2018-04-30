@@ -6,8 +6,8 @@
 <body>
     <p>What is your name?</p>
     <p>What is your favorite food?</p>
-    <p>What city do you live in?</p>
-    <p>Do you have any pets?</p>
+    <p>What is your favorite drink?</p>
+    <p>Do you like to cook?</p>
 
     <script>
         var userName = prompt('What is your name?', userName);
@@ -16,20 +16,20 @@
 
         var favoriteFood = prompt('What\'s your favorite food, ' + userName + '?');
         alert(userName + ', you love ' + favoriteFood + '!');
-        console.log('your favorite food is ' + favoriteFood)
+        console.log('favorite food is ' + favoriteFood);
 
-        var residence = prompt('Where do you live?', residence);
-        alert(userName + ', ' + residence + ' is a great place to eat ' + favoriteFood + '!');
-        console.log('you live in ' + residence);
+        var favoriteDrink = prompt('What\'s your favorite drink, ' + userName + '?');
+        alert(userName + ', ' + favoriteDrink + ' goes really well with ' + favoriteFood + '!');
+        console.log('favorite drink is ' + favoriteDrink);
 
-        var hasPets = confirm(userName + ', do you own any pets?');
-        if (hasPets) {
-            alert(userName + ', pets are great! You should hang out with them in ' + residence + ' and eat ' + favoriteFood + '!');
-            console.log('has pets');
+        var cooking = confirm('Do you like to cook?', cooking);
+        if (cooking) {
+            alert(userName + ', you should definitely cook some ' + favoriteFood + ' and have it with some ' + favoriteDrink + '!');
+            console.log('likes to cook');
         }
         else {
-            alert(userName + ', if you live in ' + residence + ' and you love ' + favoriteFood + ', you should really think about getting a pet!');
-            console.log('does not have pets');
+            alert(userName + ', you should definitely visit a food cart and get some ' + favoriteFood + ' and ' + favoriteDrink + '!');
+            console.log('does not cook');
         }
     </script>
 </body>
