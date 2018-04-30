@@ -4,41 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome!</title>
+    <title>Lab!</title>
 </head>
 <body>
     <h1>Welcome to my page!</h1>
     
     <p>What is your name?</p>
     <p>Where are you from?</p>
-    <p>What is a hobby of yours?</p>
-    <p>Where is the furthest you have traveled?</p>
+    <p>Do you have hobbies?
+        <ul>
+            <li>
+                Name one hobby you enjoy.
+            </li>
+        </ul>
+    </p>
+    <p>Have you traveled outside the USA?
+        <ul>
+            <li>
+                What is the name of the country you have traveled to?
+            </li>
+        </ul>
+    </p>
 
     <h3>Thanks for checking out my first lab project!</h3>
 
     <script>
+
+        // prompting user for their name and storing answer inside a variable.
         var userName = prompt('What is your name?');
         console.log('User\'s name is', userName);
         alert('Hey ' + userName + '! ' + 'Thanks for checking out my webpage!');
 
+        // asking user where they are from and storing answer inside a variable.
         var fromWhere = prompt('Where are you from ' + userName + '?');
         console.log('User is from', fromWhere);
         alert('Great, ' + userName + '! ' + 'I\'ll be sure to google ' + fromWhere + ' so I can picture it. ' + 'If you\'re wondering I\'m from the mysterious realm of ones and zeros.');     
        
-       var haveHobby = confirm('Do you have hobbies?');
+        // creating a boolean value and storing it inside a variable.
+        var haveHobby = confirm('Do you have hobbies?');
 
+        // creating conditional statement using boolean value above.
        if (haveHobby) {
-           var hobbyName = prompt('Awesome, ' + userName + '! Name a hobby you enjoy.');
+           var hobbyName = prompt('Awesome, ' + userName + '! Name one hobby you enjoy.');
            console.log('User\'s hobby is ' + hobbyName);
            alert('Thanks for sharing ' + userName + ' from ' + fromWhere + '. ' + 'I\'ll be sure to watch a YouTube clip on ' + hobbyName + '.');
        }
 
         else {
             alert('You need to find a hobby ' + userName + '!');
+            console.log('User does not have a hobby');
         };
 
+       // creating another boolean value.
         var travelOutsideUSA = confirm('Have you traveled outside the United States?');
 
+       // conditional statement based off boolean value.
        if (travelOutsideUSA) {
            var countryName = prompt('Cool, ' + userName + '!' + ' What was the name of the country you traveled to?');
            console.log('User has traveled to ' + countryName);
@@ -46,7 +66,8 @@
        }
 
        else {
-           alert('Get a passport and go see the world, ' + userName + '!' + 'Come back again soon!');
+           alert('Get a passport and go see the world, ' + userName + '!' + ' Come back again soon!');
+           console.log('User has not traveled outside the USA');
        };
 
     </script>
