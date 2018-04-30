@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Q and A</title>
+    <style>
+    body {
+        background-color: aquamarine;
+    }
+    h1 {
+        text-align: center;
+
+    }
+
+    #cannibal {
+
+        color:darkred;
+
+    }
+
+    p {
+        font-weight:bold;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Let's answer some questions!</h1>
+
+    <p>What is your name?</p>
+
+    <p id="cannibal">
+        You're a cannibal, aren't you?
+    </p>
+
+    <p>Is velvet your favorite fabric? Y/N?</p>
+
+    <script>    
+        var userName = prompt('What is your name?');
+        console.log('User\'s name is', userName);
+        alert('Hi ' + userName + ' welcome to my page!');
+    </script>
+
+    <script>   
+        var cannibalQuestion = prompt(userName + ' let\'s be real. You\'re a cannibal, aren\'t you?');
+        console.log(userName + ' says "' + cannibalQuestion + '." ');
+        alert('Hmmmm.. "' + cannibalQuestion + '." Very interesting, ' + userName + '.');
+        
+    </script>
+
+    <script>
+        var velvetQuestion = confirm('Yo! ' + userName + ' the Cannibal, is velvet your favorite fabric? I don\'t want you to say "' + cannibalQuestion + '" again, so pick OK for yes, or CANCEL for no.');
+        console.log(userName + '-the-Cannibal says ' + velvetQuestion );
+        
+        if(velvetQuestion) {
+            alert(userName + ', yes was a good choice.');
+        }
+        else {
+            alert(userName + ', that\'s wrong!!');
+        }
+    </script>
+    
+</body>
+</html>
