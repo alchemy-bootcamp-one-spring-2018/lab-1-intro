@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversation</title>
+</head>
+<body>
+    <h1>Conversation with your Browser</h1>
+    <h3>Please be prepared to answer the following questions from your browser</h3>
+    <ul>
+        <li>What is your name?</li>
+        <li>What is your favorite color?</li>
+        <li>What is the airspeed velocity of an unladen swallow?</li>
+    </ul>
+    <script>
+        // name
+        var userName = prompt ("What is your name?")
+        console.log ("The user's name is", userName)
+        // color
+        var userColor = prompt (userName + ", what is your favorite color?")
+        console.log ("The user's favorite color is", userColor)
+        // swallow
+        var userVelocity = prompt ("Dearest " + userName + "-who-likes-" + userColor + ", what is the airspeed velocity of an unladen swallow? (in km/hr)")
+        console.log ("The user's velocity guess is", userVelocity, "km/hr")
+    </script>
+
+</body>
+</html>
