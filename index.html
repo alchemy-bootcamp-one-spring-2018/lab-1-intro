@@ -14,12 +14,22 @@
     <div>
             <h3>1.</h3>
             <p>
-                What street address will you be starting your trip from?
+                What street address will you be starting your adventure from?
             </p>
             <script>
                     var startAddress = prompt('What is your starting address?');
-                    console.log('start trip from' , startAddress);
-                    alert('Great! You are starting your trip from' + startAddress);
+                    console.log('starting trip from' , startAddress);
+                    alert('Great! I\'ll find some hikes for you near' + startAddress);
+            </script>
+
+            <h3>2.</h3>
+            <p>
+                How many total hours do you have available for your adventure?
+            </p>
+            <script>
+                    var adventureTime = prompt('How many total hours do you have available for your adventure?');
+                    console.log('available hours for adventure:' , adventureTime);
+                    alert('Ok, I\'ll make sure you are back to' + startAddress + 'within' + adventureTime + 'hours');
             </script>
 
 
