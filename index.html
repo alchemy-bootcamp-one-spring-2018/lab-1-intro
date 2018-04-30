@@ -10,26 +10,26 @@
     <p>Do you like to cook?</p>
 
     <script>
-        var userName = prompt('What is your name?', userName);
+        var userName = prompt('What is your name?');
+        console.log('user\'s name is', userName);
         alert('Hi, ' + userName + '!');
-        console.log('hi ' + userName);
 
-        var favoriteFood = prompt('What\'s your favorite food, ' + userName + '?');
-        alert(userName + ', you love ' + favoriteFood + '!');
-        console.log('favorite food is ' + favoriteFood);
+        var favoriteFood = prompt('What is your favorite food, ' + userName + '?');
+        console.log('user\'s favorite food', favoriteFood);
+        alert(userName + ', ' + favoriteFood + ' is really tasty!');
 
-        var favoriteDrink = prompt('What\'s your favorite drink, ' + userName + '?');
+        var favoriteDrink = prompt('What is your favorite drink, ' + userName + '?');
         alert(userName + ', ' + favoriteDrink + ' goes really well with ' + favoriteFood + '!');
-        console.log('favorite drink is ' + favoriteDrink);
+        console.log('user\'s favorite drink', favoriteDrink);
 
-        var cooking = confirm('Do you like to cook?', cooking);
-        if (cooking) {
-            alert(userName + ', you should definitely cook some ' + favoriteFood + ' and have it with some ' + favoriteDrink + '!');
-            console.log('likes to cook');
+        var likesCooking = confirm('Do you like to cook?');
+        console.log('user likes cooking', likesCooking);
+
+        if (likesCooking) {
+            alert(userName + ', you should cook some ' + favoriteFood + ' and have it with some ' + favoriteDrink + '!');
         }
         else {
-            alert(userName + ', you should definitely visit a food cart and get some ' + favoriteFood + ' and ' + favoriteDrink + '!');
-            console.log('does not cook');
+            alert(userName + ', you should go and buy some ' + favoriteFood + ' and ' + favoriteDrink + '!');
         }
     </script>
 </body>
