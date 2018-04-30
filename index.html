@@ -16,45 +16,39 @@
     <p>Question 4: What is your current occupation?</p>
     <p>Question 5: Do you enjoy what you do?</p>
 
-
-    if yes, you kick ass
-    if no, do better
-
     <script>
         // Name request
         var userName = prompt('What is your name?');
-        console.log('user\s name is', userName);
+        console.log('user\'s name is', userName);
         alert('Hey '+ userName + ',' + ' very nice to meet you!!!');
 
         // Question 2
         var home = prompt('Where do you live, ' + userName + '?')
-        console.log('user\s home is', home)
+        console.log('user\'s home is', home)
         alert(home + '?' + ' How cool!')
 
         // Question 3
         var long = prompt('How many years have you lived in ' + home + '?')
-        console.log('user\s duration is', long)
+        console.log('user\'s duration is', long)
         alert('Impressive!')
         
         
         // Question 4
         var job = prompt('What is your current occupation, ' + userName + '?')
-        console.log('user\s job is', job)
+        console.log('user\'s job is', job)
         alert('How wonderful! What a go-getter you are, ' + userName + '!')
 
         // Question 5
         
-        if(likesJob) {
-	    alert('Last question for ya here ' + userName + '; ' + '. Do you enjoy being a ' + job + '?');}
-	
-        else {alert('That\s a shame isn\t, you should probably do something about that then huh, ' + userName)}
+        var likesJob = confirm('Hey ' + userName + ',' + ' last question for ya here; you enjoy being a ' + job + ',' + ' right?');
+        console.log('user likes job', likesJob)
 
+        if(likesJob) {
+	    alert('Awesome! That\'s what I like to hear!');}
+	
+        else {alert('That\'s a shame, no? You should probably do something about that then huh ' + userName + '. We\'ll all be over here feeling embarrassed for you until that changes :P')}
 
     </script>
-
-
-
-
 
 </body>
 </html>
