@@ -7,12 +7,12 @@
     <script>
     //Alert - question #1
     var userName = prompt("Hi! What is your name?");
-        console.log('User\s name is:' + userName);
+        console.log('User\'s name is: ' + userName);
         alert('Nice to meet you ' + userName + '!');
 
     //Alert - question #2
     var placeToGo = prompt('Hey, '+ userName + '! Please let me know, what is your favorite city to visit?');
-    console.log(userName + 'says their favorite place to visit is:' + placeToGo);
+    console.log(userName + ' says their favorite place to visit is: ' + placeToGo);
     alert('Oh, I like to visit ' + placeToGo + ' too!');
 
     //Confirm - question #3
@@ -20,23 +20,23 @@
 
         if(seasonToGo) {
         alert('Oh! Cool, ' + userName + ' Fall is my favorite time to visit ' + placeToGo + 'too!');
-            console.log(userName +'prefers to visit in the Fall');
+            console.log(userName +' prefers to visit in the Fall');
         }
         else {
-            alert('Well ' + userName + ', you should try to visit in the Fall. ' + placeToGo + 'is gorgeous in the Fall');
-            console.log(userName +'prefers to NOT to visit in the Fall.');
+            alert('Well ' + userName + ', you should try to visit in the Fall. ' + placeToGo + ' is gorgeous in the Fall');
+            console.log(userName +' prefers to NOT to visit in the Fall.');
         }
 
     //Alert - question #4   
     var thingToEat = prompt('By the way, ' + userName + ', when you are in '+ placeToGo + 'what is your favorite thing to eat?');
-        console.log(userName +'says their favorite food is:', thingToEat);
+        console.log(userName +' says their favorite food is: ', thingToEat);
         alert('Oh yeah, ' + thingToEat + ' is great!');
     
     //variable to contain the final concatenated string of HTML based on user answers, which will vary depending on the answer to Q3
         if (seasonToGo){
-        var message = ("<p>You know, " + userName + "! I also like to go to " + placeToGo + " in the Fall, but last time I was there, my favorite " + thingToEat + " place was closed, so I had to grab street food instead.</p>");
+        var message = ("<p>You know, " + userName + ", I also like to go to " + placeToGo + " in the Fall, but last time I was there, my favorite " + thingToEat + " place was closed, so I had to grab street food instead.</p>");
             } else {
-        var message = ("<p>You know, " + userName + "! I also like to go to " + placeToGo + ", But I prefer to visit in the Fall. Unfortunately, the last time I was there, my favorite " + thingToEat + " place was closed, so I had to grab street food instead.</p>");
+        var message = ("<p>You know, " + userName + ", I also like to go to " + placeToGo + ", but I prefer to visit in the Fall. Unfortunately, the last time I was there, my favorite " + thingToEat + " place was closed, so I had to grab street food instead.</p>");
         }
 
     </script>
