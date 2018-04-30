@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Few Questions From Mr. JavaScript</title>
+</head>
+<body>
+    <script>
+    var userName = "Mark";
+    var placeToGo = "New York City";
+    var thingToEat = "Pizza";
+    var seasonToGo = "Fall";
+    
+    //variable to contain the final concatenated string of HTML based on user answers
+    var message = ("<p>Oh wow, " + userName + "! I also like to go to " + placeToGo + " in the " + seasonToGo + ", but last time I was there, my favorite " + thingToEat + " place was closed, so I had to grab street food instead.</p>");
+
+    document.write(message);
+    
+
+ var favoriteFood = prompt('What is your favorite food?');
+        console.log('user\'s favorite food', favoriteFood);
+        alert('Hi ' + userName + ', I like ' + favoriteFood + ' too.');
+        var likesCats = confirm('You like cats, right?');
+        console.log('user likes cats', likesCats);
+        if(likesCats) {
+            alert('Hey ' + userName + ' who likes ' + favoriteFood + '. You like cats, Awesome!');
+        }
+        else {
+            alert('Hey ' + userName + ' maybe cut back on the ' + favoriteFood + ', it might help you like cats.');
+        }
+
+
+
+    </script>
+    <h1>Thank you for answering all my questions.</h1>
+
+    <script>
+            document.write(message);
+            </script>
+        
+    
+<h2>Here's a list of what I asked you</h2>
+    
+    <p>Q1: What is your name?</p>
+    <p>Q2: Which is your favorite city to visit?</p>
+    <p>Q3: Do you like to visit in the fall?</p>
+    <p>Q4: What's your favorite food to eat there?</p>
+
+</body>
+</html>
