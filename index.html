@@ -17,21 +17,37 @@
     <h3>Thanks for checking out my first lab project!</h3>
 
     <script>
-        var userName = prompt('What is your name?')
-        console.log('User\'s name is', userName)
-        alert('Hey ' + userName + '! ' + 'Thanks for checking out my webpage!')
+        var userName = prompt('What is your name?');
+        console.log('User\'s name is', userName);
+        alert('Hey ' + userName + '! ' + 'Thanks for checking out my webpage!');
 
-        var fromWhere = prompt('Where are you from ' + userName + '?')
-        console.log('User is from', fromWhere)
-        alert('Great, ' + userName + '! ' + 'I\'ll be sure to google ' + fromWhere + ' so I can picture it. ' + 'If you\'re wondering I\'m from the mysterious realm of ones and zeros.')
+        var fromWhere = prompt('Where are you from ' + userName + '?');
+        console.log('User is from', fromWhere);
+        alert('Great, ' + userName + '! ' + 'I\'ll be sure to google ' + fromWhere + ' so I can picture it. ' + 'If you\'re wondering I\'m from the mysterious realm of ones and zeros.');     
+       
+       var haveHobby = confirm('Do you have hobbies?');
 
-        var hobby = prompt('Name one of your hobbies!')
-        console.log('User\'s hobby is ' + hobby)
-        alert('Thanks for sharing ' + userName + ' from ' + fromWhere + ', Earth. ' + 'I\'ll be sure to watch a YouTube clip on ' + hobby + '.')
-        
-        var travelTo = prompt('Last question! ' + 'Where would you like to travel to?')
-        console.log(userName + ' would like to travel to ' + travelTo)
-        alert(travelTo + ', huh!' + ' Interesting choice ' + userName + ' from ' + fromWhere + ' who likes ' + hobby + '.' + ' It was great to get to know you a bit more!' + ' Come back again soon.')
+       if (haveHobby) {
+           var hobbyName = prompt('Awesome, ' + userName + '! Name a hobby you enjoy.');
+           console.log('User\'s hobby is ' + hobbyName);
+           alert('Thanks for sharing ' + userName + ' from ' + fromWhere + '. ' + 'I\'ll be sure to watch a YouTube clip on ' + hobbyName + '.');
+       }
+
+        else {
+            alert('You need to find a hobby ' + userName + '!');
+        };
+
+        var travelOutsideUSA = confirm('Have you traveled outside the United States?');
+
+       if (travelOutsideUSA) {
+           var countryName = prompt('Cool, ' + userName + '!' + ' What was the name of the country you traveled to?');
+           console.log('User has traveled to ' + countryName);
+           alert(countryName + ', huh!' + ' It was great getting to know you ' + userName + ' from ' + fromWhere + '.' + ' Hope you continue to enjoy ' + hobbyName + '.' + ' Come back again soon!');
+       }
+
+       else {
+           alert('Get a passport and go see the world, ' + userName + '!' + 'Come back again soon!');
+       };
 
     </script>
 </body>
