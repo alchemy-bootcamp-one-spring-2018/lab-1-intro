@@ -5,28 +5,38 @@
 </head>
 <body>
     <script>
-    var userName = "Mark";
+    //Alert - question #1
+    var userName = prompt("Hi! What is your name?");
+        console.log('User\s name is:' + userName);
+
+    //Alert - question #2
     var placeToGo = "New York City";
-    var thingToEat = "Pizza";
-    var seasonToGo = "Fall";
+    console.log(userName + 'says their favorite place to visit is:' + placeToGo);
+
+    //Confirm - question #3
+    var seasonToGo = confirm("My favorite time to visit" + placeToGo + "is the Fall. Do you like to visit in the Fall?");
+
+        if(seasonToGo) {
+            alert('Hey ' + userName + ' who likes ' + favoriteFood + '. You like cats, Awesome!');
+            console.log(userName +'prefers to visit in the Fall');
+        }
+        else {
+            alert('Hey ' + userName + ' maybe cut back on the ' + favoriteFood + ', it might help you like cats.');
+            console.log(userName +'prefers to NOT to visit in the Fall.');
+        }
+
+    //Alert - question #4   
+     var thingToEat = "Pizza";
     
     //variable to contain the final concatenated string of HTML based on user answers
     var message = ("<p>Oh wow, " + userName + "! I also like to go to " + placeToGo + " in the " + seasonToGo + ", but last time I was there, my favorite " + thingToEat + " place was closed, so I had to grab street food instead.</p>");
 
-    document.write(message);
-    
-
- var favoriteFood = prompt('What is your favorite food?');
+   var favoriteFood = prompt('What is your favorite food?');
         console.log('user\'s favorite food', favoriteFood);
         alert('Hi ' + userName + ', I like ' + favoriteFood + ' too.');
-        var likesCats = confirm('You like cats, right?');
-        console.log('user likes cats', likesCats);
-        if(likesCats) {
-            alert('Hey ' + userName + ' who likes ' + favoriteFood + '. You like cats, Awesome!');
-        }
-        else {
-            alert('Hey ' + userName + ' maybe cut back on the ' + favoriteFood + ', it might help you like cats.');
-        }
+        
+        
+
 
 
 
