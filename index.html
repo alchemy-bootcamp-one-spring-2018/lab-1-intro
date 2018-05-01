@@ -17,9 +17,9 @@
                 What street address will you be starting your adventure from?
             </p>
             <script>
-                    var startAddress = prompt('What is your starting address?');
-                    console.log('starting trip from' , startAddress);
-                    alert('Great! I\'ll find some hikes for you near ' + startAddress);
+                var startAddress = prompt('What is your starting address?');
+                console.log('starting trip from' , startAddress);
+                alert('Great! I\'ll find some hikes for you near ' + startAddress);
             </script>
 
             <h3>2.</h3>
@@ -27,23 +27,23 @@
                 How many total hours do you have available for your adventure?
             </p>
             <script>
-                    var adventureTime = prompt('How many total hours do you have available for your adventure?');
-                    console.log('available hours for adventure: ' , adventureTime);
-                    alert('Ok, I\'ll make sure you are back to ' + startAddress + 'within ' + adventureTime + ' hours');
+                var adventureTime = prompt('How many total hours do you have available for your adventure?');
+                console.log('available hours for adventure: ' , adventureTime);
+                alert('Ok, I\'ll make sure you are back to ' + startAddress + 'within ' + adventureTime + ' hours');
             </script>
             <h3>3.</h3>
             <p>
                 Are you ready for a hike with over 2,000ft. of elevation gain?  
             </p>
             <script>
-                    var elevation = confirm('Are you ready for a hike with over 2,000ft. of elevation gain?');
-                    console.log('Are they up for elevation gain?' , elevation);
+                var elevation = confirm('Are you ready for a hike with over 2,000ft. of elevation gain?');
+                console.log('Are they up for elevation gain?' , elevation);
 
-                    if(elevation){
-                        alert('Let\'s head for the hills!')
+                if(elevation){
+                    alert('Let\'s head for the hills!')
                     }
-                    else {
-                        alert('Ok, we\'ll keep it mellow.')
+                else {
+                    alert('Ok, we\'ll keep it mellow.')
                     }
                    
             </script>
@@ -52,18 +52,18 @@
                 Would you prefer a mountain or coastal adventure? 
             </p>
             <script>
-                    var environment = prompt('Would you prefer a mountain or coastal adventure?');
-                    console.log('Mountains or the coast?' , environment);
+                var environment = prompt('Would you prefer a mountain or coastal adventure?');
+                console.log('Mountains or the coast?' , environment);
 
-                    alert('You can\'t go wrong with a ' + environment + ' adventure!')                   
+                alert('You can\'t go wrong with a ' + environment + ' adventure!')                   
             </script>
             <hr>
              <h3>Let's make sure I have all the details:</h3>
              <script>
-                     var adventureDetails = prompt('Let\'s make sure I have all the details correct. Ready to review your adventure constraints?');
-                     console.log('Adventure constraints are' , adventureDetails);
+                var adventureDetails = prompt('Let\'s make sure I have all the details correct. Ready to review your adventure constraints?');
+                console.log('Adventure constraints are' , adventureDetails);
  
-                     alert('Your ' + environment + ' adventure will begin at ' + startAddress + ' and will last for ' + adventureTime + ' hours.')                   
+                alert('Your ' + environment + ' adventure will begin at ' + startAddress + ' and will last for ' + adventureTime + ' hours.')                   
              </script>
     </div>
     
