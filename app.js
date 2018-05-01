@@ -1,13 +1,14 @@
+'use strict';
+
+
 const userName = prompt('What is your name?');
 console.log('User\'s name is', userName);
 
 const savedName = userName;
 alert('Hi ' + savedName + '. Welcome to the questionaire!');
 
-// ***No matter user response, alert is 'Awesome!'{
-let affirmative = ('Yes');
-const likesCoffee = (affirmative);
-prompt('Do you like coffee?');
+
+const likesCoffee = confirm('Do you like coffee?');
 
 if(likesCoffee){
     alert('Awesome! It\'s one of my favorite things.');
@@ -16,7 +17,6 @@ if(likesCoffee){
 else {
     alert('Maybe we shouldn\'t talk anymore.');
 }
-// ***No matter user response, alert is 'Awesome!'}
 
 const favoriteFood = prompt('What is your favorite food?');
 console.log(savedName + '\'s favorite food is', favoriteFood + '.');
