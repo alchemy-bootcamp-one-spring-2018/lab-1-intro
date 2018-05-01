@@ -5,36 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Q and A</title>
+    
     <style>
+
     body {
-        background-color: aquamarine;
-    }
+        background-color: rgb(224, 235, 229);
+        border-radius: 25px 50px 30px 9px;
+        border-left: 20px  solid rgb(60, 129, 156);
+        border-right: 25px solid rgb(24, 63, 78);
+            }
+
     h1 {
+        margin-top: 50px;
+        font-size: 3em; 
         text-align: center;
+        font-family: 'Corben', Georgia, Times, serif;
+        text-shadow: 1px 1px 1px rgb(157, 157, 158);
+        }
 
-    }
-
-    //#cannibal {
-        //color:darkred;
-
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 200px;
+        margin-left: 300x;
+        text-align: center;
+        color:rgb(199, 181, 17);
+        font-family: 'Corben', Georgia, Times, serif;
+        text-shadow: .5px .5px .5px rgb(250, 251, 252);
     }
 
     p {
-        font-weight:bold;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 200px;
+        margin-left: 450px;
+        padding: 20x;        
+        font-family: 'Nobile', Helvetica, Arial, sans-serif;
+        outline-color: rgb(152, 187, 207);
+        outline-style: outset;
     }
+
+    #center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
+
     </style>
+
 </head>
 
 <body>
     <h1>Let's answer some questions!</h1>
+    <hr>
+
+    <h2>Are you the sort of silly bobo who loves answering questions? Does your heart yearn for being asked things that don't make sense? Are you cuckoo for cranberries? Then this is the site for you!</h2>
+    
+    <hr>
 
     <p>What is your name?</p>
 
-    <p id="cannibal">
-        You're a cannibal, aren't you?
-    </p>
+    <p>You're a cannibal, aren't you?</p>
 
     <p>Is velvet your favorite fabric? Y/N?</p>
+
+    <p>If a nasty little tuba plays "Ode to Joy" on a street corner and there is no one there to dance, does it still make a sound?</p>
 
     <script>    
         var userName = prompt('What is your name?');
@@ -43,28 +80,32 @@
     </script>
 
     <script>   
-        var cannibalQuestion = prompt(userName + ' let\'s be real. You\'re a cannibal, aren\'t you?');
+        var cannibalQuestion = prompt(userName + ', let\'s be real. You\'re a cannibal, aren\'t you?');
         console.log(userName + ' says "' + cannibalQuestion + '." ');
         alert('Hmmmm.. "' + cannibalQuestion + '." Very interesting, ' + userName + '.');
         
     </script>
 
     <script>
-        var velvetQuestion = confirm('Yo! ' + userName + '-the-Cannibal, is velvet your favorite fabric? I don\'t want you to say "' + cannibalQuestion + '" again, so pick OK for yes, or CANCEL for no.');
+        var velvetQuestion = confirm('Yo, yo, yo! ' + userName + '-the-Cannibal, is velvet your favorite fabric? I don\'t want you to say "' + cannibalQuestion + '" again, so pick OK to confirm or CANCEL to deny.');
         console.log(userName + '-the-Cannibal says ' + velvetQuestion );
         
         if(velvetQuestion) {
-            alert(userName + ', yes was a good choice.');
+            alert(userName + ', confirm was a good choice.');
         }
         else {
-            alert(userName + ', that\'s wrong!!');
+            alert(userName + ', that\'s wrong, ya dummy!!');
         }
     </script>
 
     <script>
     
-        var tubaQuestion = prompt('Ok, ' + userName + '-the-Cannibal who said ' + velvetQuestion ' to loving velvet. If a little nasty tuba plays "Ode to Joy" in the forest and there is no one there to dance, does it still make a sound?');
-        console.log()
+        var tubaQuestion = prompt('Ok, ' + userName + '-the-Cannibal who said ' + velvetQuestion + ' to loving velvet. If a nasty little tuba plays "Ode to Joy" on a street corner and there is no one there to dance, does it still make a sound?');
+        console.log(tubaQuestion);
+        alert(userName + " Zoinks!");
+            
+        document.write('<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Playing_trumpet_at_temple._Mandi%2C_Himachal_Pradesh.jpg" alt="Weird dude playing tuba on street corner" id="center">');
+            
     
     </script>
     
