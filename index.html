@@ -12,24 +12,28 @@
     <p>How old are you?</p>
     <p>What is your favorite food?</p>
     <p>Are you hungry?</p>
-    <script>
-    var userName = prompt('What is your name?');
-    console.log('user\'s name is', userName);
-    alert('Hi ' + userName + ' welcome to my web page!')
-    var userAge = prompt('How old are you?');
-    console.log('user\'s age is', userAge);
-    alert(userName + ', you\'re telling me that you are ' + userAge + '?! I don\'t believe you.')
-    var userFood = prompt('What is your favorite food?');
-    console.log('user\'s favorite food is', userFood);
-    alert('OK ' + userName + ', so ' + userFood + ' is your favorite thing to eat after ' + userAge + ' years living on this rock?')
-    var userHunger = confirm('Are you hungry right now?');
-    console.log('is user hungry:', userHunger);
-    if(userHunger) {
-        alert('So ' + userName + ", " + userAge + ' years young ay? Hungry too? Well let\'s go get some ' + userFood + '!!!')
-    }
-    else {
-        alert('So ' + userName + ", " + userAge + ' years young ay? I have some ' + userFood + ', but it doesn\'t seem like you are too hungry... get back to work!')
-    }
+   
+   <script>
+        var userName = prompt('What is your name?');
+        console.log('user\'s name is', userName);
+        alert('Hi ' + userName + ' welcome to my web page!');
+    
+        var userAge = prompt('How old are you?');
+        console.log('user\'s age is', userAge);
+        alert(userName + ', you\'re telling me that you are ' + userAge + '?! I don\'t believe you.');
+   
+        var userFood = prompt('What is your favorite food?');
+        console.log('user\'s favorite food is', userFood);
+        alert('OK ' + userName + ', so ' + userFood + ' is your favorite thing to eat after ' + userAge + ' years living on this rock?');
+    
+        var userHunger = confirm('Are you hungry right now?');
+        console.log('is user hungry:', userHunger);
+        if(userHunger) {
+            alert('So ' + userName + ", " + userAge + ' years young ay? Hungry too? Well let\'s go get some ' + userFood + '!!!');
+        }
+        else {
+            alert('So ' + userName + ", " + userAge + ' years young ay? I have some ' + userFood + ', but it doesn\'t seem like you are too hungry... get back to work!');
+        }
     </script>
 </body>
 </html>
