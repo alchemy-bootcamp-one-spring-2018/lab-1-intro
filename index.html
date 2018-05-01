@@ -32,11 +32,17 @@
 
         // prompting user for their name and storing answer inside a variable.
         var userName = prompt('What is your name?');
+        while(userName === null) {
+            var userName = prompt('What is your name?');
+        };
         console.log('User\'s name is', userName);
         alert('Hey ' + userName + '! ' + 'Thanks for checking out my webpage!');
 
         // asking user where they are from and storing answer inside a variable.
         var fromWhere = prompt('Where are you from ' + userName + '?');
+        while (fromWhere === null) {
+            var fromWhere = prompt('Where are you from ' + userName + '?');
+        };
         console.log('User is from', fromWhere);
         alert('Great, ' + userName + '! ' + 'I\'ll be sure to google ' + fromWhere + ' so I can picture it. ' + 'If you\'re wondering I\'m from the mysterious realm of ones and zeros.');     
        
