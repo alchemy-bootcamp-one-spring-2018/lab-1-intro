@@ -4,7 +4,7 @@ console.log('User\'s name is', userName);
 const savedName = userName;
 alert('Hi ' + savedName + '. Welcome to the questionaire!');
 
-// *******This part is not working properly{
+// ***No matter user response, alert is 'Awesome!'{
 let affirmative = ('Yes');
 const likesCoffee = (affirmative);
 prompt('Do you like coffee?');
@@ -16,7 +16,7 @@ if(likesCoffee){
 else {
     alert('Maybe we shouldn\'t talk anymore.');
 }
-// ******This part is not working properly}
+// ***No matter user response, alert is 'Awesome!'}
 
 const favoriteFood = prompt('What is your favorite food?');
 console.log(savedName + '\'s favorite food is', favoriteFood + '.');
