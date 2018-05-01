@@ -14,9 +14,8 @@
 
     }
 
-    #cannibal {
-
-        color:darkred;
+    //#cannibal {
+        //color:darkred;
 
     }
 
@@ -40,7 +39,7 @@
     <script>    
         var userName = prompt('What is your name?');
         console.log('User\'s name is', userName);
-        alert('Hi ' + userName + ' welcome to my page!');
+        alert('Hi, ' + userName + ' welcome to my page!');
     </script>
 
     <script>   
@@ -51,7 +50,7 @@
     </script>
 
     <script>
-        var velvetQuestion = confirm('Yo! ' + userName + ' the Cannibal, is velvet your favorite fabric? I don\'t want you to say "' + cannibalQuestion + '" again, so pick OK for yes, or CANCEL for no.');
+        var velvetQuestion = confirm('Yo! ' + userName + '-the-Cannibal, is velvet your favorite fabric? I don\'t want you to say "' + cannibalQuestion + '" again, so pick OK for yes, or CANCEL for no.');
         console.log(userName + '-the-Cannibal says ' + velvetQuestion );
         
         if(velvetQuestion) {
@@ -60,6 +59,13 @@
         else {
             alert(userName + ', that\'s wrong!!');
         }
+    </script>
+
+    <script>
+    
+        var tubaQuestion = prompt('Ok, ' + userName + '-the-Cannibal who said ' + velvetQuestion ' to loving velvet. If a little nasty tuba plays "Ode to Joy" in the forest and there is no one there to dance, does it still make a sound?');
+        console.log()
+    
     </script>
     
 </body>
