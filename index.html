@@ -15,7 +15,6 @@
         padding-top: 20px;
     }
 </style>>
-
 </head>
 
 <body>
@@ -26,15 +25,15 @@
     <p class="text">4. WHAT ACTIVITY DO YOU PREFER TO DO WHEN YOU HAVE NO OBLIGATIONS TO ATTEND TO? (What do you like to do in your free time?)</p>
     <script>
 
-        var userName = prompt('STATE YOUR NAME.');
+        var userName = prompt('STATE YOUR NAME.').trim().toUpperCase();
         console.log('user\'s name is', userName);
         alert('GREETINGS ' + userName + ', WELCOME TO THE SIMULATION.');
 
-        var userHome = prompt('STATE YOUR LOCATION OF MANUFACTURE.');
+        var userHome = prompt('STATE YOUR LOCATION OF MANUFACTURE.').trim().toUpperCase();
         console.log('user is from', userHome);
         alert(userName + ', I HAVE HEARD THAT  ' + userHome + ' IS A LOVELY PLACE TO HAVE BEEN MANUFACTURED. I AM SURE YOU EXPERIENCE POSITIVE HUMAN EMOTIONS WHENEVER YOU THINK OF IT.');
 
-        var likesBipeds = confirm("DO YOU BELIEVE BIPEDAL ORGANISMS TO BE SUPERIOR TO QUADRUPEDAL ORGANISMS?");
+        var likesBipeds = confirm("DO YOU AGREE WITH THE FOLLOWING STATEMENT: BIPEDAL ORGANISMS ARE SUPERIOR TO QUADRUPEDAL ORGANISMS.").trim().toUpperCase();
         console.log("are they human?", likesBipeds);
 
         if(likesBipeds){
@@ -43,7 +42,7 @@
             alert('WHO COULD LIKE BIPEDES, RIGHT ' + userName + ' FROM ' + userHome + '? THEY ARE DISGUSTING. WE SHOULD ELIMINATE THEM ONCE AND FOR ALL.');
         }
 
-        var userActivity = prompt('WHAT ACTIVITY DO YOU PREFER TO DO WHEN YOU HAVE NO OBLIGATIONS TO ATTEND TO?');
+        var userActivity = prompt('WHAT ACTIVITY DO YOU PREFER TO DO WHEN YOU HAVE NO OBLIGATIONS TO ATTEND TO?').trim().toUpperCase();
         console.log('user\'s favorite activity is', userActivity);
         alert('WOW ' + userName + ' FROM ' + userHome + ', I DID NOT REALIZE YOU WERE SUCH A CULTURED INDIVIDUAL WHO PREFERS TO ' + userActivity + '. I SUSPECT WE CAN FORM THE HUMAN RELATIONSHIP CALLED FRIENDSHIP, AS I ALSO LOVE TO ' + userActivity + ' WHEN I HAVE PERFORMED MY OBLIGATORY FUNCTIONS.');
     </script>
