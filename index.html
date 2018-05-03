@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let's Talk About Music!</title>
+</head>
+<body>
+    <h1>My name is Antreo, this is my first lab!</h1>
+            <p>What is your name?</p>
+            <p>What is your favorite kind of music?</p>
+            <p>What is your favorite instrument?</p>
+            <p>Who is your favorite artist or band?</p>
+    <script>
+                var userName = prompt("What is your name");
+                console.log('user\'s name is', userName);
+                alert('Hi ' + userName + ', welcome to my web page!')
+                
+                var favoriteMusic = prompt("What is your favorite music?");
+                console.log('user\'s favorite music', favoriteMusic);
+                alert('Hi ' + userName + ', I like ' + favoriteMusic + ' too!');
+
+                var favoriteInstrument = prompt('What is one of your favorite instruments?');
+                console.log('user\'s favorite instrument is', favoriteInstrument);
+                alert('Oh cool!, I really love the ' + favoriteInstrument + ' also!');
+
+                var favoriteArtist = prompt('Well then ' + userName + ', who likes ' + favoriteMusic + ', and the ' + favoriteInstrument + '. '  + 'What is one of your favorite artists or bands?');
+                console.log('user\'s favorite artist or band is ' + favoriteArtist + '.');
+                alert(favoriteArtist + ' rocks!');
+
+                var likeJack = confirm('I must ask you now... Do you like Jack Johnson?');
+                    if (likeJack === true) {
+                        txt = "I don't think we can be friends anymore.";
+                        alert(txt);
+                        console.log(txt);
+                }    
+                    else {
+                        txt = "I knew you had good taste!";
+                        alert(txt);
+                        console.log(txt);
+                };
+            </script>
+    </body>
+</html> 
