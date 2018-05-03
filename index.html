@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 1</title>
+</head>
+<body>
+
+    <h1>Got some questions for ya bruh</h1>    
+
+    <p>Question 1: What is your name?</p>
+    <p>Question 2: Where do you live?</p>
+    <p>Question 3: How many years have you lived there?</p>
+    <p>Question 4: What is your current occupation?</p>
+    <p>Question 5: Do you enjoy what you do?</p>
+
+    <script>
+        // Name request
+        var userName = prompt('What is your name?');
+        console.log('user\'s name is', userName);
+        alert('Hey '+ userName + ',' + ' very nice to meet you!!!');
+
+        // Question 2
+        var home = prompt('Where do you live, ' + userName + '?')
+        console.log('user\'s home is', home)
+        alert('You live in ' + home + '?' + ' That\'s pretty cool ' + userName + '!')
+
+        // Question 3
+        var years = prompt('How many years have you lived in ' + home + '?')
+        console.log('user\'s duration is', years)
+        alert('That\'s really impressive ' + userName + '! ' + years + ' years is quite some time!')
+        
+        
+        // Question 4
+        var job = prompt('What is your current occupation, ' + userName + '?')
+        console.log('user\'s job is', job)
+        alert('How wonderful! What a go-getter you are, ' + userName + '!')
+
+        // Question 5
+        
+        var likesJob = confirm('Hey ' + userName + ',' + ' last question for ya here; you enjoy being a ' + job + ',' + ' right?');
+        console.log('user likes job', likesJob)
+
+        if(likesJob) {
+	    alert('Awesome! That\'s what I like to hear!');}
+	
+        else {alert('No? That\'s a shame. You should probably do something about that then huh ' + userName + '. We\'ll all be over here feeling embarrassed for you until that changes :P')}
+
+    </script>
+
+</body>
+</html>
