@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 1</title>
+</head>
+<body>
+    <h1>Q & A</h1>
+    <ul>
+        <li>What's your name?</li>
+        <li>What's your favorite type of music?</li>
+        <li>Have you traveled?</li>
+        <li>Where?</li>
+    </ul>   
+    <script>
+        //prompt user for name
+        var userName = prompt('Please, tell me you name.');
+        console.log('User\'s name is', userName);
+
+        //greet user
+        alert('Hi there, ' + userName + '. Nice to meet you!');
+
+        //prompt user for favorite type of music
+        var favMusic = prompt('What kind of music do you enjoy the most?');
+        console.log('User\'s favorite music is', favMusic);
+
+        alert('I feel like I could get into ' + favMusic + '. I will check it out.');
+
+        //ask if user has travelled
+        var hasTravelled = confirm('Have you ever travelled to a foreign country?');
+        console.log('User has travelled', hasTravelled);
+
+        if (hasTravelled) {
+            var lastPlace = prompt('Where did you travel to most recently?');
+            console.log('User has travelled to', lastPlace);
+            alert('Cool, ' + userName + '. I\'ve heard great things about ' + lastPlace + '. Listening to some ' + favMusic + ' over there sounds awesome.');
+        } else {
+            var nextPlace = prompt('Where would you like to travel?');
+            console.log('User would like to travel to', nextPlace);
+            alert('You should definitely go to ' + nextPlace + ', ' + userName + '! I bet they have a big ' + favMusic + ' scene over there.');
+        }
+    </script>
+
+</body>
+</html>
