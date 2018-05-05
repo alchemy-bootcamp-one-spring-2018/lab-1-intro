@@ -28,12 +28,14 @@
         do{
             var userVelocity = prompt (greeting + 'what is the airspeed velocity of an unladen swallow? (in km/hr)');
             console.log ('The user\'s velocity guess is', userVelocity, 'km/hr');
-            if(isNaN(userVelocity)) {
+            if (isNaN(userVelocity)) {
                 alert('Please enter a number.');
             }
-        } while(isNaN(userVelocity))
+        } while(userVelocity !== null && isNaN(userVelocity))
         // respond to user about the velocity
-        if(userVelocity < .5) {
+        if (userVelocity === null) {
+            alert ('Afraid to answer, are you?  Into the chasm you go!');      
+        } else if (userVelocity < .5) {
             alert('I think you underestimate the capabilities of the mighty swallow!');
         } else if(userVelocity < 30) {
             alert('That seems like a reasonable guess to me.');
