@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 1</title>
+</head>
+<body>
+    <p>What is your name?</p>
+    <p>What is your favorite food?</p>
+    <p>What is your favorite drink?</p>
+    <p>Do you like to cook?</p>
+
+    <script>
+        var userName = prompt('What is your name?');
+        console.log('user\'s name is', userName);
+        alert('Hi, ' + userName + '!');
+
+        var favoriteFood = prompt('What is your favorite food, ' + userName + '?');
+        console.log('user\'s favorite food', favoriteFood);
+        alert(userName + ', ' + favoriteFood + ' is really tasty!');
+
+        var favoriteDrink = prompt('What is your favorite drink, ' + userName + '?');
+        alert(userName + ', ' + favoriteDrink + ' goes really well with ' + favoriteFood + '!');
+        console.log('user\'s favorite drink', favoriteDrink);
+
+        var likesCooking = confirm('Do you like to cook?');
+        console.log('user likes cooking', likesCooking);
+
+        if (likesCooking) {
+            alert(userName + ', you should cook some ' + favoriteFood + ' and have it with some ' + favoriteDrink + '!');
+        }
+        else {
+            alert(userName + ', you should go and buy some ' + favoriteFood + ' and ' + favoriteDrink + '!');
+        }
+    </script>
+</body>
+</html>
