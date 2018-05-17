@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wake up</title>
+</head>
+<body>
+    <h1>What is your name?</h1>
+    <h1>What is your favorite method of transportation?</h1>
+    <h1>What is your favorite smell?</h1>
+    <h1>What is your favorite time of day?</h1>
+    <script>
+        var name = prompt("What is your name?");
+        console.log('user\'s name is ' + name);
+        var place = prompt("What is your favorite place?");
+        console.log('user\'s name is ' + place);
+        var smell = prompt("What is your favorite smell?");
+        console.log('user\'s name is ' + smell);
+        if (confirm("Are you a morning person?")) {
+            var time = 'morning';
+        } else {
+            var time = 'night';
+        }
+        console.log('user\'s name is ' + time);
+        alert('Hello ' + name + '! Would you like to venture out to ' + place + ' tomorrow ' + time + ' to smell the ' + smell + '?');
+
+    </script>
+</body>
+</html>
