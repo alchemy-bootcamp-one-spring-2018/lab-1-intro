@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+     <title>Lab 1</title>
+  </head>
+<body>
+    <h1>Tom Riddle's Diary</h1>
+    <p>What is your name?</p> <!--prompt 1-->
+    <p>What is your favorite treat from Diagon Alley?</p> <!--prompt 2-->
+    <p>What is your favorite subject at Hogwarts?</p> <!--prompt 3-->
+    <p>Were you sorted into Slytherin house?</p> <!--prompt 4-->
+    <script>
+        //prompt 1
+        var userName = prompt('What is your name?');
+        console.log('user\'s name is', userName);
+
+        alert('Hello ' + userName + ', my name is Tom Riddle.');
+
+        //prompt 2
+        var favTreat = prompt('What is your favorite treat from Diagon Alley?');
+        console.log('user\'s favorite treat is', favTreat);
+
+        alert('Hello ' + userName + ', I like ' + favTreat + ' too!');
+
+        //prompt 3
+        var favSubject = prompt('What is your favorite subject at Hogwarts?');
+        console.log('user\'s favorite subject is', favSubject);
+
+        alert('Hey ' + userName + ", who likes " + favTreat + ", " + favSubject + " is my favorite subject too.");
+
+        //prompt 4
+        var rightHouse = confirm('Were you sorted into Slytherin house?');
+        console.log('user\'s house is Slytherin', rightHouse);
+
+        if(rightHouse) {
+            alert('Well ' + userName + ", you are a worthy student at Hogwarts. I hope to see you soon in " + favSubject + '. Enjoy your ' + favTreat + ".");
+        }
+        else {
+            alert('Well ' + userName + ", maybe if you liked " + favSubject + " and " + favTreat + " more you would be in Slytherin.");
+        }
+    </script>
+</body>
+</html>
